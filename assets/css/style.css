@@ -1,0 +1,1022 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'OpenDyslexic' ;
+    src: url("../fonts//OpenDyslexic-Italic.eot");
+    src: local("OpenDyslexic Italic"), local("OpenDyslexic-Italic"), 
+         url("../fonts//OpenDyslexic-Italic.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts//OpenDyslexic-Italic.woff2") format("woff2"), 
+         url("../fonts//OpenDyslexic-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url("../fonts//OpenDyslexic-Bold-Italic.eot");
+    src: local("OpenDyslexic Bold Italic"), local("OpenDyslexic-Bold-Italic"), 
+         url("../fonts//OpenDyslexic-Bold-Italic.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts//OpenDyslexic-Bold-Italic.woff2") format("woff2"), 
+         url("../fonts//OpenDyslexic-Bold-Italic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url("../fonts//OpenDyslexic-Bold.eot");
+    src: local("OpenDyslexic Bold"), local("OpenDyslexic-Bold"), 
+         url("../fonts//OpenDyslexic-Bold.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts//OpenDyslexic-Bold.woff2") format("woff2"), 
+         url("../fonts//OpenDyslexic-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url("../fonts//OpenDyslexic-Regular.eot");
+    src: local("OpenDyslexic Regular"), local("OpenDyslexic-Regular"), 
+         url("../fonts//OpenDyslexic-Regular.eot?#iefix") format("embedded-opentype"), 
+         url("../fonts//OpenDyslexic-Regular.woff2") format("woff2"), 
+         url("../fonts//OpenDyslexic-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+.accessibility-button img.accessibility-button-img {
+    background-color: #2d68ff;
+    width: 57px;
+    height: 57px;
+    border-radius: 100%;
+    border: 2px solid #2d68ff;
+    object-fit: contain;
+    padding: 5px;
+}
+.wbay-acc-voice-navigation-pop-up * {
+    color:#ffffff !important ;
+}
+button.accessibility-button {
+    cursor: pointer;
+    position: fixed;
+    bottom: 3vh;
+    z-index: 99999999999999999;
+    left: 2vh;
+}
+img.wbay_acc_check_img_show {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 18px;
+}
+.wbay-acc-accessibility-wrap-body {
+    position: relative;
+    height:100%;
+    background-color: #eff1f5;
+    padding: 15px;
+    overflow: auto;
+    margin: 4px;
+    width: 100%;
+}
+.wbay-acc-accessibility-wrap {
+    width: 390px;
+    background-color: #2d68ff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 99999999999;
+    margin: 15px;
+    border-radius: 10px;
+    height: calc(100vh - 30px);
+    transition: transform 0.3s ease-in-out;
+    transform: none;
+}
+.wbay-acc-accessibility-wrap-hed h2 {
+    font-size:16px !important;
+    line-height:1.6 !important;
+    color:#fff;
+    font-weight:500 !important;
+    text-transform:capitalize !important;
+    margin-bottom:0 !important;
+}
+.wbay-acc-accessibility-wrap-hed {
+    padding:12px 16px 12px 15px !important;
+    display:flex !important;
+    justify-content:space-between !important;
+    /* height:12%; */
+    min-height: 50px;
+}
+button#wbAyCloseButton {
+    border: none;
+    padding: 4px;
+    background: none;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 28px;
+}
+.wbay-acc-features-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+button.wbay-acc-features-item-i {
+    position: relative;
+    width: 100%;
+    height: 114px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    -webkit-appearance: none;
+    cursor: pointer;
+    background: #fff !important;
+    background-color: #fff !important;
+    border-radius: 12px;
+    border: 2px solid #fff !important;
+    padding: 5px;
+    transition: border-color .15s ease;
+}
+.wbay-acc-d-none {
+    display: none !important;
+}
+.wbay-acc-accessibility-wrap-hide {
+    transform: translateX(calc(-100% - 15px));
+    
+}
+.wbay-acc-features_item {
+    position: relative;
+}
+button.wbay-acc-features-item-i:focus,
+.wbay-acc-features_item.active button.wbay-acc-features-item-i,
+button.wbay-acc-features-item-i:hover {
+    border-color:#ffffff !important;
+    background-color: #eff1f5 !important;
+}
+.wbay-acc-features_item.active span.wbay-acc-features_item_name {
+    color: #2d68ff;
+}
+.wbay-acc-features_item.active img.accessibility-button-img {
+    filter: invert(37%) sepia(36%) saturate(5576%) hue-rotate(215deg) brightness(98%) contrast(107%);
+}
+span.wbay-acc-features-item-steps {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+span.wbay-acc-features-step {
+    border-radius: 10px;
+    display: flex;
+    height: 3px;
+    position: relative;
+    background: transparent;
+    width: 100%;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+    max-width: 33%;
+}
+.wbay-acc-features_item.active .wbay-acc-features-item-i.stap4 .wbay-acc-features-item-steps .wbay-acc-features-step:nth-child(4),
+.wbay-acc-features_item.active .wbay-acc-features-item-i.stap3 .wbay-acc-features-item-steps .wbay-acc-features-step:nth-child(3),
+.wbay-acc-features_item.active .wbay-acc-features-item-i.stap2 .wbay-acc-features-item-steps .wbay-acc-features-step:nth-child(2),
+.wbay-acc-features_item.active .wbay-acc-features-item-i.stap1 .wbay-acc-features-item-steps .wbay-acc-features-step:nth-child(1) {
+    background: #2d68ff;
+}
+.wa-by-letter-spacing-stap1{
+    word-spacing: 0.16em!important;
+    letter-spacing: .12em!important;
+}
+.wa-by-letter-spacing-stap2 {
+    word-spacing: 0.32em!important;
+    letter-spacing: .24em!important;
+}
+.wa-by-letter-spacing-stap3 {
+    word-spacing: 0.48em!important;
+    letter-spacing: .36em!important;
+}
+#WbAyAccessibilityWrap .wa-by-letter-spacing-stap3,
+#WbAyAccessibilityWrap .wa-by-letter-spacing-stap2,
+#WbAyAccessibilityWrap .wa-by-letter-spacing-stap1 {
+    word-spacing:normal !important;
+    letter-spacing:normal !important;
+}
+.wbay-acc-features-item-icon {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+    margin-top: 17px;
+}
+.wbay-acc-features-item-icon .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+.wbay-acc-accessibility-wrap-foot {
+    position: relative;
+    height: 80px;
+}
+.wbay-acc-accessibility-wrap-body-massage,
+button.wbay_acc_btn_reset_widget {
+    text-align: center;
+    cursor: pointer;
+    background: #fff !important;
+    color: #fff !important;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: none;
+    border: 2px solid #3368f2 !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    padding: 11px;
+    transition: background-color .15s ease,border-color .15s ease;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d68ff !important;
+    width: 100%;
+}
+button.wbay_acc_btn_reset_widget {
+    margin-bottom: 10px;
+}
+.wbay-acc-massage-icon,
+.wbay_acc_btn_reset_widget_icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 11px;
+    margin-left: 11px;
+}
+.wbay-acc-accessibility-wrap-body-massage {
+    background-color: #00595b;
+    display: flex;
+    border-color: #00595b;
+    position: absolute;
+    width: auto;
+    left: 15px;
+    right: 15px;
+    z-index: 999999;
+    top: 68px;
+}
+.wbay-acc-massage-icon {
+    background-color: rgb(0 0 0 / 36%);
+    padding: 5px;
+    border-radius: 100%;
+}
+.wbay-acc-body-massage-hide {
+    display: none;
+}
+.wa-by-highlight-links-stap1 {
+    transition: border 0.3s ease-in-out 0s, color 0.5s ease 0s;
+    text-decoration: underline !important;
+    color: rgb(255, 255, 0) !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+.wa-by-bigger-text-stap1 {
+    zoom: 1.2 !important;
+}
+.wa-by-bigger-text-stap2 {
+    zoom: 1.3 !important;
+}
+.wa-by-bigger-text-stap3 {
+    zoom: 1.5 !important;
+}
+.wa-by-bigger-text-stap4 {
+    zoom: 1.6 !important;
+}
+.wbay-acc-features-item-i span.wbay-acc-features_item_name {
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+body.wbay-acc-stop-animations * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    -webkit-animation-fill-mode: forwards !important;
+    -moz-animation-fill-mode: forwards !important;
+    -ms-animation-fill-mode: forwards !important;
+    -o-animation-fill-mode: forwards !important;
+    animation-fill-mode: forwards !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -moz-animation-iteration-count: 1 !important;
+    -ms-animation-iteration-count: 1 !important;
+    -o-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    -webkit-animation-duration: .01s !important;
+    -moz-animation-duration: .01s !important;
+    -ms-animation-duration: .01s !important;
+    -o-animation-duration: .01s !important;
+    animation-duration: .01s !important;
+}
+body.wbay-acc-hide-images *::before,
+body.wbay-acc-hide-images *::after,
+body.wbay-acc-hide-images * {
+    background-image: none !important;    
+}
+body.wbay-acc-hide-images * canvas ,
+body.wbay-acc-hide-images * img {
+    transition: transform 0.4s cubic-bezier(0.38, 3, 0.57, 1.6) 0s;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+body.wbay-acc-hide-images #WbAyAccessibilityWrap canvas,
+body.wbay-acc-hide-images #WbAyAccessibilityWrap img,
+body.wbay-acc-hide-images .accessibility-button img.accessibility-button-img,
+body.wbay-acc-hide-images img.wbay_acc_check_img_show,
+body.wbay-acc-hide-images .wbay-acc-features-item-icon .icon img {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+body.wbay-acc-readabler-dyslexia-font rs-layer ,
+body.wbay-acc-readabler-dyslexia-font rs-mask-wrap ,
+body.wbay-acc-readabler-dyslexia-font, 
+body.wbay-acc-readabler-dyslexia-font h1, 
+body.wbay-acc-readabler-dyslexia-font h1 span, 
+body.wbay-acc-readabler-dyslexia-font h2, 
+body.wbay-acc-readabler-dyslexia-font h2 span, 
+body.wbay-acc-readabler-dyslexia-font h3, 
+body.wbay-acc-readabler-dyslexia-font h3 span, 
+body.wbay-acc-readabler-dyslexia-font h4, 
+body.wbay-acc-readabler-dyslexia-font h4 span, 
+body.wbay-acc-readabler-dyslexia-font h5, 
+body.wbay-acc-readabler-dyslexia-font h5 span, 
+body.wbay-acc-readabler-dyslexia-font h6, 
+body.wbay-acc-readabler-dyslexia-font h6 span, 
+body.wbay-acc-readabler-dyslexia-font a, 
+body.wbay-acc-readabler-dyslexia-font p, 
+body.wbay-acc-readabler-dyslexia-font li a, 
+body.wbay-acc-readabler-dyslexia-font label, 
+body.wbay-acc-readabler-dyslexia-font input, 
+body.wbay-acc-readabler-dyslexia-font select, 
+body.wbay-acc-readabler-dyslexia-font textarea, 
+body.wbay-acc-readabler-dyslexia-font legend, 
+body.wbay-acc-readabler-dyslexia-font code, 
+body.wbay-acc-readabler-dyslexia-font pre, 
+body.wbay-acc-readabler-dyslexia-font dd, 
+body.wbay-acc-readabler-dyslexia-font dt, 
+body.wbay-acc-readabler-dyslexia-font span, 
+body.wbay-acc-readabler-dyslexia-font a,
+body.wbay-acc-readabler-dyslexia-font button, 
+body.wbay-acc-readabler-dyslexia-font blockquote {
+    font-family: 'OpenDyslexic', serif !important;
+}
+body.wbay-acc-readabler-Arial-font rs-layer ,
+body.wbay-acc-readabler-Arial-font rs-mask-wrap ,
+body.wbay-acc-readabler-Arial-font, 
+body.wbay-acc-readabler-Arial-font h1, 
+body.wbay-acc-readabler-Arial-font h1 span, 
+body.wbay-acc-readabler-Arial-font h2, 
+body.wbay-acc-readabler-Arial-font h2 span, 
+body.wbay-acc-readabler-Arial-font h3, 
+body.wbay-acc-readabler-Arial-font h3 span, 
+body.wbay-acc-readabler-Arial-font h4, 
+body.wbay-acc-readabler-Arial-font h4 span, 
+body.wbay-acc-readabler-Arial-font h5, 
+body.wbay-acc-readabler-Arial-font h5 span, 
+body.wbay-acc-readabler-Arial-font h6, 
+body.wbay-acc-readabler-Arial-font h6 span, 
+body.wbay-acc-readabler-Arial-font a, 
+body.wbay-acc-readabler-Arial-font p, 
+body.wbay-acc-readabler-Arial-font li a, 
+body.wbay-acc-readabler-Arial-font label, 
+body.wbay-acc-readabler-Arial-font input, 
+body.wbay-acc-readabler-Arial-font select, 
+body.wbay-acc-readabler-Arial-font textarea, 
+body.wbay-acc-readabler-Arial-font legend, 
+body.wbay-acc-readabler-Arial-font code, 
+body.wbay-acc-readabler-Arial-font pre, 
+body.wbay-acc-readabler-Arial-font dd, 
+body.wbay-acc-readabler-Arial-font dt, 
+body.wbay-acc-readabler-Arial-font span, 
+body.wbay-acc-readabler-Arial-font a, 
+body.wbay-acc-readabler-Arial-font button, 
+body.wbay-acc-readabler-Arial-font blockquote {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap ,
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h1, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h1 span, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h2, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h2 span, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h3, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h3 span, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h4, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h4 span, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h5, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h5 span, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h6, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap h6 span, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap a, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap p, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap li a, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap label, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap input, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap select, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap textarea, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap legend, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap code, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap pre, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap dd, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap dt, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap span, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap a, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap button, 
+body.wbay-acc-readabler-dyslexia-font #WbAyAccessibilityWrap blockquote {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+body.wbay-acc-enhanced-cursor-stap1 * {
+    cursor: url(../images/arrow-cursor-img.svg), auto !important ;
+}
+#wbay_acc_reading_guide_horizontal {
+    position: fixed;
+    z-index: 99999999999999999999999999999999999999999999999999999999;
+    box-sizing: border-box;
+    background: #000;
+    width: 40vw!important;
+    min-width: 200px!important;
+    height: 12px!important;
+    border: solid 3px #2d68ff;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+#wbay_acc_reading_guide_horizontal:after, 
+#wbay_acc_reading_guide_horizontal:before {
+    content: "";
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+#wbay_acc_reading_guide_horizontal:before {
+    border-bottom-color: #2d68ff;
+    border-width: 17px;
+    margin-left: -17px;
+}
+#wbay_acc_reading_guide_horizontal:after {
+    border-bottom-color: #000;
+    border-width: 14px;
+    margin-left: -14px;
+}
+#wbay_acc_reading_tooltips_show_html {
+    white-space: nowrap;
+    position: fixed!important;
+    box-sizing: border-box!important;
+    border: solid 2px #fff!important;
+    background: #34394d!important;
+    color: #fff!important;
+    font-weight: 600!important;
+    font-size: 17px!important;
+    border-radius: 10px;
+    text-align: left!important;
+    padding: 13px 18px;
+    box-shadow: 0 0 15px rgba(66,73,96,.4);
+    height: auto!important;
+    z-index: 2147483647;
+    display: none;
+}
+body.wbay_acc_data_line_height_stap1 rs-layer ,
+body.wbay_acc_data_line_height_stap1 rs-mask-wrap ,
+body.wbay_acc_data_line_height_stap1, 
+body.wbay_acc_data_line_height_stap1 h1, 
+body.wbay_acc_data_line_height_stap1 h1 span, 
+body.wbay_acc_data_line_height_stap1 h2, 
+body.wbay_acc_data_line_height_stap1 h2 span, 
+body.wbay_acc_data_line_height_stap1 h3, 
+body.wbay_acc_data_line_height_stap1 h3 span, 
+body.wbay_acc_data_line_height_stap1 h4, 
+body.wbay_acc_data_line_height_stap1 h4 span, 
+body.wbay_acc_data_line_height_stap1 h5, 
+body.wbay_acc_data_line_height_stap1 h5 span, 
+body.wbay_acc_data_line_height_stap1 h6, 
+body.wbay_acc_data_line_height_stap1 h6 span, 
+body.wbay_acc_data_line_height_stap1 a, 
+body.wbay_acc_data_line_height_stap1 p, 
+body.wbay_acc_data_line_height_stap1 li a, 
+body.wbay_acc_data_line_height_stap1 label, 
+body.wbay_acc_data_line_height_stap1 input, 
+body.wbay_acc_data_line_height_stap1 select, 
+body.wbay_acc_data_line_height_stap1 textarea, 
+body.wbay_acc_data_line_height_stap1 legend, 
+body.wbay_acc_data_line_height_stap1 code, 
+body.wbay_acc_data_line_height_stap1 pre, 
+body.wbay_acc_data_line_height_stap1 dd, 
+body.wbay_acc_data_line_height_stap1 dt, 
+body.wbay_acc_data_line_height_stap1 span, 
+body.wbay_acc_data_line_height_stap1 a,
+body.wbay_acc_data_line_height_stap1 button, 
+body.wbay_acc_data_line_height_stap1 blockquote {
+    line-height: 45px !important;
+}
+body.wbay_acc_data_line_height_stap2 rs-layer ,
+body.wbay_acc_data_line_height_stap2 rs-mask-wrap ,
+body.wbay_acc_data_line_height_stap2, 
+body.wbay_acc_data_line_height_stap2 h1, 
+body.wbay_acc_data_line_height_stap2 h1 span, 
+body.wbay_acc_data_line_height_stap2 h2, 
+body.wbay_acc_data_line_height_stap2 h2 span, 
+body.wbay_acc_data_line_height_stap2 h3, 
+body.wbay_acc_data_line_height_stap2 h3 span, 
+body.wbay_acc_data_line_height_stap2 h4, 
+body.wbay_acc_data_line_height_stap2 h4 span, 
+body.wbay_acc_data_line_height_stap2 h5, 
+body.wbay_acc_data_line_height_stap2 h5 span, 
+body.wbay_acc_data_line_height_stap2 h6, 
+body.wbay_acc_data_line_height_stap2 h6 span, 
+body.wbay_acc_data_line_height_stap2 a, 
+body.wbay_acc_data_line_height_stap2 p, 
+body.wbay_acc_data_line_height_stap2 li a, 
+body.wbay_acc_data_line_height_stap2 label, 
+body.wbay_acc_data_line_height_stap2 input, 
+body.wbay_acc_data_line_height_stap2 select, 
+body.wbay_acc_data_line_height_stap2 textarea, 
+body.wbay_acc_data_line_height_stap2 legend, 
+body.wbay_acc_data_line_height_stap2 code, 
+body.wbay_acc_data_line_height_stap2 pre, 
+body.wbay_acc_data_line_height_stap2 dd, 
+body.wbay_acc_data_line_height_stap2 dt, 
+body.wbay_acc_data_line_height_stap2 span, 
+body.wbay_acc_data_line_height_stap2 a,
+body.wbay_acc_data_line_height_stap2 button, 
+body.wbay_acc_data_line_height_stap2 blockquote {
+    line-height: 52.5px !important;
+}
+body.wbay_acc_data_line_height_stap3 rs-layer ,
+body.wbay_acc_data_line_height_stap3 rs-mask-wrap ,
+body.wbay_acc_data_line_height_stap3, 
+body.wbay_acc_data_line_height_stap3 h1, 
+body.wbay_acc_data_line_height_stap3 h1 span, 
+body.wbay_acc_data_line_height_stap3 h2, 
+body.wbay_acc_data_line_height_stap3 h2 span, 
+body.wbay_acc_data_line_height_stap3 h3, 
+body.wbay_acc_data_line_height_stap3 h3 span, 
+body.wbay_acc_data_line_height_stap3 h4, 
+body.wbay_acc_data_line_height_stap3 h4 span, 
+body.wbay_acc_data_line_height_stap3 h5, 
+body.wbay_acc_data_line_height_stap3 h5 span, 
+body.wbay_acc_data_line_height_stap3 h6, 
+body.wbay_acc_data_line_height_stap3 h6 span, 
+body.wbay_acc_data_line_height_stap3 a, 
+body.wbay_acc_data_line_height_stap3 p, 
+body.wbay_acc_data_line_height_stap3 li a, 
+body.wbay_acc_data_line_height_stap3 label, 
+body.wbay_acc_data_line_height_stap3 input, 
+body.wbay_acc_data_line_height_stap3 select, 
+body.wbay_acc_data_line_height_stap3 textarea, 
+body.wbay_acc_data_line_height_stap3 legend, 
+body.wbay_acc_data_line_height_stap3 code, 
+body.wbay_acc_data_line_height_stap3 pre, 
+body.wbay_acc_data_line_height_stap3 dd, 
+body.wbay_acc_data_line_height_stap3 dt, 
+body.wbay_acc_data_line_height_stap3 span, 
+body.wbay_acc_data_line_height_stap3 a,
+body.wbay_acc_data_line_height_stap3 button, 
+body.wbay_acc_data_line_height_stap3 blockquote {
+    line-height: 60px !important;
+}
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap ,
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h1, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h1 span, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h2, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h2 span, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h3, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h3 span, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h4, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h4 span, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h5, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h5 span, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h6, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap h6 span, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap a, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap p, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap li a, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap label, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap input, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap select, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap textarea, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap legend, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap code, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap pre, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap dd, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap dt, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap span, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap a, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap button, 
+body.wbay_acc_data_line_height_stap3 #WbAyAccessibilityWrap blockquote,
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap,
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h1, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h1 span, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h2, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h2 span, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h3, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h3 span, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h4, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h4 span, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h5, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h5 span, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h6, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap h6 span, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap a, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap p, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap li a, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap label, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap input, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap select, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap textarea, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap legend, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap code, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap pre, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap dd, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap dt, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap span, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap a, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap button, 
+body.wbay_acc_data_line_height_stap2 #WbAyAccessibilityWrap blockquote,
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap ,
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h1, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h1 span, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h2, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h2 span, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h3, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h3 span, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h4, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h4 span, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h5, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h5 span, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h6, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap h6 span, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap a, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap p, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap li a, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap label, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap input, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap select, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap textarea, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap legend, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap code, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap pre, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap dd, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap dt, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap span, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap a, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap button, 
+body.wbay_acc_data_line_height_stap1 #WbAyAccessibilityWrap blockquote {
+    line-height:normal !important;
+}
+body.wbay-acc-text-align-stap1 *,
+body.wbay-acc-text-align-stap1 rs-layer ,
+body.wbay-acc-text-align-stap1 rs-mask-wrap ,
+body.wbay-acc-text-align-stap1, 
+body.wbay-acc-text-align-stap1 h1, 
+body.wbay-acc-text-align-stap1 h1 span, 
+body.wbay-acc-text-align-stap1 h2, 
+body.wbay-acc-text-align-stap1 h2 span, 
+body.wbay-acc-text-align-stap1 h3, 
+body.wbay-acc-text-align-stap1 h3 span, 
+body.wbay-acc-text-align-stap1 h4, 
+body.wbay-acc-text-align-stap1 h4 span, 
+body.wbay-acc-text-align-stap1 h5, 
+body.wbay-acc-text-align-stap1 h5 span, 
+body.wbay-acc-text-align-stap1 h6, 
+body.wbay-acc-text-align-stap1 h6 span, 
+body.wbay-acc-text-align-stap1 a, 
+body.wbay-acc-text-align-stap1 p, 
+body.wbay-acc-text-align-stap1 li a, 
+body.wbay-acc-text-align-stap1 label, 
+body.wbay-acc-text-align-stap1 input, 
+body.wbay-acc-text-align-stap1 select, 
+body.wbay-acc-text-align-stap1 textarea, 
+body.wbay-acc-text-align-stap1 legend, 
+body.wbay-acc-text-align-stap1 code, 
+body.wbay-acc-text-align-stap1 pre, 
+body.wbay-acc-text-align-stap1 dd, 
+body.wbay-acc-text-align-stap1 dt, 
+body.wbay-acc-text-align-stap1 span,
+body.wbay-acc-text-align-stap1 button, 
+body.wbay-acc-text-align-stap1 blockquote {
+    text-align: left !important;
+}
+body.wbay-acc-text-align-stap2 *,
+body.wbay-acc-text-align-stap2 rs-layer ,
+body.wbay-acc-text-align-stap2 rs-mask-wrap ,
+body.wbay-acc-text-align-stap2, 
+body.wbay-acc-text-align-stap2 h1, 
+body.wbay-acc-text-align-stap2 h1 span, 
+body.wbay-acc-text-align-stap2 h2, 
+body.wbay-acc-text-align-stap2 h2 span, 
+body.wbay-acc-text-align-stap2 h3, 
+body.wbay-acc-text-align-stap2 h3 span, 
+body.wbay-acc-text-align-stap2 h4, 
+body.wbay-acc-text-align-stap2 h4 span, 
+body.wbay-acc-text-align-stap2 h5, 
+body.wbay-acc-text-align-stap2 h5 span, 
+body.wbay-acc-text-align-stap2 h6, 
+body.wbay-acc-text-align-stap2 h6 span, 
+body.wbay-acc-text-align-stap2 a, 
+body.wbay-acc-text-align-stap2 p, 
+body.wbay-acc-text-align-stap2 li a, 
+body.wbay-acc-text-align-stap2 label, 
+body.wbay-acc-text-align-stap2 input, 
+body.wbay-acc-text-align-stap2 select, 
+body.wbay-acc-text-align-stap2 textarea, 
+body.wbay-acc-text-align-stap2 legend, 
+body.wbay-acc-text-align-stap2 code, 
+body.wbay-acc-text-align-stap2 pre, 
+body.wbay-acc-text-align-stap2 dd, 
+body.wbay-acc-text-align-stap2 dt, 
+body.wbay-acc-text-align-stap2 span,
+body.wbay-acc-text-align-stap2 button, 
+body.wbay-acc-text-align-stap2 blockquote {
+    text-align: right !important;
+}
+body.wbay-acc-text-align-stap3 *,
+body.wbay-acc-text-align-stap3 rs-layer ,
+body.wbay-acc-text-align-stap3 rs-mask-wrap ,
+body.wbay-acc-text-align-stap3, 
+body.wbay-acc-text-align-stap3 h1, 
+body.wbay-acc-text-align-stap3 h1 span, 
+body.wbay-acc-text-align-stap3 h2, 
+body.wbay-acc-text-align-stap3 h2 span, 
+body.wbay-acc-text-align-stap3 h3, 
+body.wbay-acc-text-align-stap3 h3 span, 
+body.wbay-acc-text-align-stap3 h4, 
+body.wbay-acc-text-align-stap3 h4 span, 
+body.wbay-acc-text-align-stap3 h5, 
+body.wbay-acc-text-align-stap3 h5 span, 
+body.wbay-acc-text-align-stap3 h6, 
+body.wbay-acc-text-align-stap3 h6 span, 
+body.wbay-acc-text-align-stap3 a, 
+body.wbay-acc-text-align-stap3 p, 
+body.wbay-acc-text-align-stap3 li a, 
+body.wbay-acc-text-align-stap3 label, 
+body.wbay-acc-text-align-stap3 input, 
+body.wbay-acc-text-align-stap3 select, 
+body.wbay-acc-text-align-stap3 textarea, 
+body.wbay-acc-text-align-stap3 legend, 
+body.wbay-acc-text-align-stap3 code, 
+body.wbay-acc-text-align-stap3 pre, 
+body.wbay-acc-text-align-stap3 dd, 
+body.wbay-acc-text-align-stap3 dt, 
+body.wbay-acc-text-align-stap3 span,
+body.wbay-acc-text-align-stap3 button, 
+body.wbay-acc-text-align-stap3 blockquote {
+    text-align: center !important;
+}
+body.wbay-acc-text-align-stap4 *,
+body.wbay-acc-text-align-stap4 rs-layer ,
+body.wbay-acc-text-align-stap4 rs-mask-wrap ,
+body.wbay-acc-text-align-stap4, 
+body.wbay-acc-text-align-stap4 h1, 
+body.wbay-acc-text-align-stap4 h1 span, 
+body.wbay-acc-text-align-stap4 h2, 
+body.wbay-acc-text-align-stap4 h2 span, 
+body.wbay-acc-text-align-stap4 h3, 
+body.wbay-acc-text-align-stap4 h3 span, 
+body.wbay-acc-text-align-stap4 h4, 
+body.wbay-acc-text-align-stap4 h4 span, 
+body.wbay-acc-text-align-stap4 h5, 
+body.wbay-acc-text-align-stap4 h5 span, 
+body.wbay-acc-text-align-stap4 h6, 
+body.wbay-acc-text-align-stap4 h6 span, 
+body.wbay-acc-text-align-stap4 a, 
+body.wbay-acc-text-align-stap4 p, 
+body.wbay-acc-text-align-stap4 li a, 
+body.wbay-acc-text-align-stap4 label, 
+body.wbay-acc-text-align-stap4 input, 
+body.wbay-acc-text-align-stap4 select, 
+body.wbay-acc-text-align-stap4 textarea, 
+body.wbay-acc-text-align-stap4 legend, 
+body.wbay-acc-text-align-stap4 code, 
+body.wbay-acc-text-align-stap4 pre, 
+body.wbay-acc-text-align-stap4 dd, 
+body.wbay-acc-text-align-stap4 dt, 
+body.wbay-acc-text-align-stap4 span,
+body.wbay-acc-text-align-stap4 button, 
+body.wbay-acc-text-align-stap4 blockquote {
+    text-align: justify !important;
+}
+html.wbay-acc-text-low-saturation {
+    filter: saturate(0.5) !important;
+}
+html.wbay-acc-text-high-saturation {
+    filter: saturate(3) !important;
+}
+html.wbay-acc-text-desaturate {
+    filter: saturate(0) !important;
+}
+html.wbay-acc-contrast-stap1 {
+    background: #fff!important;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+.wbay-acc-contrast-stap2 {
+    background-color: rgb(0, 0, 0) !important;
+    border-color: rgb(255, 255, 255) !important;
+    color: rgb(80, 208, 160) !important;
+}
+.wbay-acc-contrast-stap3 {
+    background-color: rgb(255, 255, 255) !important;
+    border-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+}
+.wbay-acc-accessibility-wrap.wbay-acc-contrast-stap3 h2 {
+    background-color: rgb(255, 255, 255) !important;
+    border-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+}
+.wbay-acc-voice-navigation-pop-up {
+    max-width: 900px;
+    position: fixed;
+    z-index: 21311151415411;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(47 47 47 / 90%);
+    padding: 15px;
+    backdrop-filter: blur(5px);
+    transition: all 400ms ease;
+    border-radius: 12px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.wbay-acc-voice-navigation-pop-up-active {
+    width: auto !important;
+    height: auto !important;
+    bottom: 20px !important;
+    opacity: 1;
+}
+.wbay-acc-voice-navigation-pop-up-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;    
+}
+fieldset#wa-by-voice-navigation-fieldset {
+    width: 100%;
+}
+fieldset#wa-by-voice-navigation-fieldset input:focus,
+fieldset#wa-by-voice-navigation-fieldset input {
+    margin: 0 !important;
+    background-color: transparent !important;
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    height: auto;
+}
+button#wa-by-voice-navigation-po-up-close-button,
+button#wa-by-voice-navigation-po-up-body-close-button,
+button#wbay-acc-voice-navigation-record-button {
+    border: 2px solid !important;
+    border-radius: 100% !important;
+    width: 35px !important;
+    height: 33px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    max-width: 35px !important;
+    max-height: 33px !important;
+    min-width: 35px !important;
+    min-height: 33px !important;
+}
+fieldset#wa-by-voice-navigation-fieldset {
+    margin: 0 15px !important;
+    padding: 0;
+    border: 0;
+    line-height: normal;
+}
+button#wa-by-voice-navigation-po-up-body-close-button {
+    margin: 0 15px !important;
+}
+#wbay-acc-voice-navigation-pop-up-header * {
+    margin-bottom: 0 !important;
+}
+.wbay-acc-voice-navigation-pop-up-body {
+    margin-top: 15px !important;
+    max-height: 30vh;
+    overflow-y: auto;
+}
+.wbay-acc-voice-navigation-command-wrap-text b {
+    font-size: 16px !important;
+    letter-spacing: normal !important;
+}
+.wbay-acc-voice-navigation-command-wrap-text span {
+    font-size: 15px !important;
+    letter-spacing: normal !important;
+    font-weight: 400 !important;
+}
+button.wbay-acc-voice-navigation-command-button {
+    padding: 10px !important;
+    border: 1px solid #fff !important;
+    border-radius: 8px !important;
+    margin: 7.5px !important;
+}
+.wbay-acc-voice-navigation-command-wrap-box {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+p.wbay-acc-voice-navigation-command-wrap-text {
+    margin-bottom: 0 !important;
+}
+.wbay-acc-voice-navigation-command-wrap {
+    border-bottom: 1px solid #7f7f7f;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+button.wbay-acc-voice-navigation-command-button {
+    padding: 10px !important;
+    border: 1px solid #fff !important;
+    border-radius: 8px !important;
+    margin: 7.5px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    background-color: transparent !important;
+}
+.wbay-acc-voice-navigation-stap1 a:focus[href], 
+.wbay-acc-voice-navigation-stap1 area:focus[href], 
+.wbay-acc-voice-navigation-stap1 input:focus:not([disabled]), 
+.wbay-acc-voice-navigation-stap1 select:focus:not([disabled]), 
+.wbay-acc-voice-navigation-stap1 textarea:focus:not([disabled]), 
+.wbay-acc-voice-navigation-stap1 button:focus:not([disabled]), 
+.wbay-acc-voice-navigation-stap1 [tabindex="0"]:focus {
+    box-shadow: 0 0 0 2px #2d68ff;
+
+}
+[wbay-acc-aria-describedby="tooltip"] {
+    position: relative;
+}
+.wbay-acc-accessibility-voice-number::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.wbay-acc-accessibility-voice-number {
+    position: absolute;
+    width: 40px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    z-index: 1;
+    line-height: normal;
+    bottom: 125%;
+    z-index: 5465465464654646464465464555;
+}
+img.wbay-acc-accessibility-wrap-foot-logo {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.wbay-acc-accessibility-wrap-foot a {
+    text-align: center;
+}
+button#AccessibilityButtonWrp {
+    padding: 0;
+    background: transparent !important;
+    border: 0;
+}
+.check-img-hide {
+    display: none;
+}
+.wbay-acc-features-item-icon img {
+    max-width: 30px;
+    max-height: 30px;
+    object-fit: contain;
+}
+.wbay-acc-accessibility-wrap-body-wrap {
+    margin: 0px 10px;
+    border-radius: 12px;
+    display: flex;
+    background-color: #eff1f5;
+    overflow: hidden;
+    height: calc(100% - 130px);
+}
+.accessibility-button_active .accessibility-button-img {
+    background-color: #108700 !important;
+    border: 2px solid #108700 !important;
+}

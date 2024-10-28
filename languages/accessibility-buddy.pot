@@ -1,0 +1,449 @@
+# Copyright (C) 2020 mailchimp-for-wp
+# This file is distributed under the same license as the mailchimp-for-wp package.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Webful Accounting - AccountsBuddy\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Webful Creations ateeq@webfulcreations.com\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/includes/wbay_accessibility_dashboard.php:22
+msgid " Accessibility Dashboard"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:28
+msgid "Accessibility settings have been reset "
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:37
+msgid "Reset All Accessibility Settings "
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:64
+msgid "Contrast +"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:65
+msgid "Invert Colors"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:66
+msgid "Dark Contrast"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:67
+msgid "Light Contrast"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:83
+msgid "Text Spacing"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:97
+msgid "Highlight Links"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:114
+msgid "Bigger Text"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:131
+msgid "Pause Animations"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:132
+msgid "Play Animations"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:146
+msgid "Hide Images"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:164
+msgid "Dyslexia Friendly"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:165
+msgid "Legible Fonts"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:188
+msgid "Cursor"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:189
+msgid "Big Cursor"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:190
+msgid "Reading Mask"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:191
+msgid "Reading Guide"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:205
+msgid "Tooltips"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:221
+msgid "Line Height"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:222
+msgid "Line Height(1.5x)"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:223
+msgid "Line Height(1.75x)"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:224
+msgid "Line Height(2x)"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:250
+msgid "Text Align"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:251
+msgid "Align Left"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:252
+msgid "Align Right"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:253
+msgid "Align Center"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:254
+msgid "Justify"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:270
+msgid "Saturation"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:271
+msgid "Low Saturation"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:272
+msgid "High Saturation"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:273
+msgid "Desaturate"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:287
+msgid "Voice Navigation"
+msgstr ""
+
+#: lib/includes/wbay_accessibility_dashboard.php:301
+msgid "Text to Speech"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:39
+msgid "Help = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:39
+msgid "available voice commands"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:44
+msgid "Help"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:48
+msgid "Help me"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:52
+msgid "Show commands"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:61
+msgid "Hide help = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:61
+#: lib/includes/wbay_voice_navigation.php:83
+#: lib/includes/wbay_voice_navigation.php:105
+#: lib/includes/wbay_voice_navigation.php:127
+#: lib/includes/wbay_voice_navigation.php:149
+#: lib/includes/wbay_voice_navigation.php:171
+#: lib/includes/wbay_voice_navigation.php:193
+#: lib/includes/wbay_voice_navigation.php:215
+#: lib/includes/wbay_voice_navigation.php:237
+#: lib/includes/wbay_voice_navigation.php:259
+#: lib/includes/wbay_voice_navigation.php:281
+#: lib/includes/wbay_voice_navigation.php:303
+#: lib/includes/wbay_voice_navigation.php:325
+#: lib/includes/wbay_voice_navigation.php:347
+msgid "available voice commands "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:66
+msgid "Hide help"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:70
+msgid "Hide commands"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:74
+msgid "Hide commands list"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:83
+msgid "Scroll down = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:88
+msgid "Scroll down"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:92
+msgid "Page Down"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:96
+msgid "Down"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:105
+msgid "Scroll up = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:110
+msgid "Up"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:114
+msgid "Scroll up"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:118
+msgid "Page Up"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:127
+msgid "Go to top = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:132
+msgid "Page Top"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:136
+msgid "Top"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:140
+msgid "Go to top"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:149
+msgid "Go to bottom = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:154
+msgid "Go to bottom"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:158
+msgid "Bottom"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:162
+msgid "Page Bottom"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:171
+msgid "Tab = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:176
+msgid "Tab"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:180
+msgid "Next"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:184
+msgid "Next Tab"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:193
+msgid "Tab back = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:198
+msgid "Tab back"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:202
+msgid "Previous"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:206
+msgid "Previous Tab"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:215
+msgid "Show numbers = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:220
+msgid "Show numbers"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:224
+msgid "Display numbers"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:228
+msgid "Enable numbers"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:237
+msgid "Hide numbers = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:242
+msgid "Hide numbers"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:246
+msgid "Disable numbers"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:250
+msgid "Remove numbers"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:259
+msgid "Clear input = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:264
+msgid "Clear input"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:268
+msgid "Clear"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:272
+msgid "Remove"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:281
+msgid "Enter = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:286
+msgid "Enter"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:290
+msgid "Submit"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:294
+msgid "Ok"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:303
+msgid "Reload = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:308
+msgid "Reload"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:312
+msgid "Update"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:316
+msgid "Refresh"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:325
+msgid "Stop = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:330
+msgid "Stop"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:334
+msgid "Cancel"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:338
+msgid "Stop listening"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:347
+msgid "Exit = "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:352
+msgid "Exit"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:356
+msgid "Quit"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:360
+msgid "Close"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:371
+msgid " (Help) (Help Me) (Show Commands) "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:372
+msgid "Say a command... "
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:373
+msgid "Voice recognition has stopped"
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:374
+msgid "Voice recognition has stopped, no voice detected."
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:375
+msgid "Network error. Check is you online and try again."
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:376
+msgid "Microphone access denied. Check is your microphone connected and try again."
+msgstr ""
+
+#: lib/includes/wbay_voice_navigation.php:377
+msgid "Voice recognition error. Try again."
+msgstr ""
